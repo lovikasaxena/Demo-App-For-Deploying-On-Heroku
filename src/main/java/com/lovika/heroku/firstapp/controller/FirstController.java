@@ -8,6 +8,10 @@ public class FirstController {
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public String firstEndPoint(@RequestParam(value = "name", defaultValue = "User") String name) {
         return "Hello " + name + " !";
+    }
 
+
+    String justForTest(){
+        return "TEST";
     }
 }
